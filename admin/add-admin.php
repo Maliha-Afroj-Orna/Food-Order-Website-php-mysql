@@ -6,6 +6,17 @@
 
         <br><br>
 
+        <?php 
+        
+            if(isset($_SESSION['add']))  //checking whether the session is set or not
+            {
+                echo $_SESSION['add'];  //displaying session message
+                unset($_SESSION['add']);  //removing session message
+            }
+        
+        ?>
+
+
         <form action="" method="POST">
 
             <table class="tbl-30">
@@ -70,9 +81,34 @@
             password  = '$password'
       "; 
 
+     //3. executing query and save data into database
+      $res = mysqli_query($conn, $sql) or die(mysqli_error());
      
-      // $res = mysqli_query($conn, $sql) or die(mysqli_error());
-     
+      //4. check whether the (query is executed) data is inserted or not and display appropriate message
+      if($res==TRUE)
+      {
+          //data inserted
+         // echo "Data Inserted";
+
+         //create a session variable to display message
+         $_SESSION['add'] = "Admin Added Successfully";
+
+         //redirect page to manage admin
+         header('location:'.SITEURL .'admin/manage-admin.php');
+
+      }
+      else
+      {
+          //failed to insert data
+         // echo "Failed to Insert Data";
+
+          //create a session variable to display message
+          $_SESSION['add'] = "Failed to Add Admin";
+
+          //redirect page to add admin
+          header('location:'.SITEURL.'admin/add-admin.php');
+      }   
+
     }
 
 ?>
