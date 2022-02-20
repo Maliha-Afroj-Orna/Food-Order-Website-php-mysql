@@ -44,7 +44,7 @@ table tr td{
 }
 
 .btn-primary{
-    background-color:#1e90ff;
+    background-color:#8D3D5B;
     padding: 1%;
     color: white;
     text-decoration: none;
@@ -52,11 +52,11 @@ table tr td{
     border-radius: 5px;
 }
 .btn-primary:hover{
-    background-color:#3742fa;
+    background-color:#cf6a87;
 }
 
 .btn-secondary{
-    background-color:#7bed9f;
+    background-color:#27ae60;
     padding: 1%;
     color: black;
     text-decoration: none;
@@ -64,11 +64,11 @@ table tr td{
     border-radius: 5px;
 }
 .btn-secondary:hover{
-    background-color:#2ed573;
+    background-color:#2ecc71;
 }
 
 .btn-danger{
-    background-color:#ff6b81;
+    background-color:#c0392b;
     padding: 1%;
     color: white;
     text-decoration: none;
@@ -76,15 +76,15 @@ table tr td{
     border-radius: 5px;
 }
 .btn-danger:hover{
-    background-color:#ff4757;
+    background-color:#e74c3c;
 }
 
 .success{
-    color: #2ed573;
+    color: #27ae60;
 }
 
 .error{
-    color: #ff4757;
+    color: #c0392b;
 }
 
 
@@ -104,10 +104,10 @@ table tr td{
 .menu ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: #ff6b81;
+    color: #8D3D5B;
 }
 .menu ul li a:hover{
-    color: #ff4757;
+    color: #cf6a87;
 }
 
 
@@ -127,7 +127,10 @@ table tr td{
 
 /* css for footer */
 .footer{
-    background-color: #ff4757;
+    background-color: #8D3D5B;
+    color: white;
+}
+.footer a{
     color: white;
 }
 

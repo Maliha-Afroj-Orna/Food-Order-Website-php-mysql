@@ -1,5 +1,5 @@
 /* 
-    Author: Vijay Thapa;
+    Author: Maliha & Fariha;
     Theme: Restaurant Food Order;
     version: 1.0;
 */
@@ -34,6 +34,12 @@
 .text-white{
     color: white;
 }
+.text-purple{
+    color: #8D3D5B;
+}
+.text-black{
+    color: black;
+}
 
 .clearfix{
     clear: both;
@@ -41,11 +47,12 @@
 }
 
 a{
-    color: #ff6b81;
+    color: #8D3D5B;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover{
-    color: #ff4757;
+    color: #2F3542;
 }
 
 .btn{
@@ -55,16 +62,16 @@ a:hover{
     border-radius: 5px;
 }
 .btn-primary{
-    background-color: #ff6b81;
+    background-color: #8D3D5B;
     color: white;
     cursor: pointer;
 }
 .btn-primary:hover{
     color: white;
-    background-color: #ff4757;
+    background-color: #2F3542;
 }
 h2{
-    color: #2f3542;
+    color: #8D3D5B;
     font-size: 2rem;
     margin-bottom: 2%;
 }
@@ -77,13 +84,14 @@ h3{
 .float-text{
     position: absolute;
     bottom: 50px;
-    left: 40%;
+    left: 25%;
 }
 fieldset{
     border: 1px solid white;
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
+    color: white;
 }
 
 
@@ -107,10 +115,10 @@ fieldset{
 }
 
 
-/* CSS for Food SEarch Section */
+/* CSS for Food Search Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
